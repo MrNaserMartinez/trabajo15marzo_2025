@@ -29,22 +29,45 @@ public static void main(String[] args) {
 //
 //    System.out.println("Recorrido inorden:");
 
-    ArbolContactos arbol = new ArbolContactos();
+//    ArbolContactos arbol = new ArbolContactos();
+//
+//    arbol.insertar("Farore", "123456789");
+//    arbol.insertar("Impa", "987654321");
+//    arbol.insertar("Navi", "555555555");
+//    arbol.insertar("Zelda", "111111111");
+//    arbol.insertar("Link", "999999999");
+//    arbol.insertar("Ganon", "000000000");
+//
+//    String telefono = arbol.buscarTelefono("Navi");
+//    if (telefono != null) {
+//        System.out.println("Teléfono de Navi: " + telefono);
+//    } else {
+//        System.out.println("Navi no está el wey en el árbol.");
+//    }
+//
+    Arbol arbol = new Arbol();
+    arbol.insertar(4);
+    arbol.insertar(2);
+    arbol.insertar(6);
+    arbol.insertar(1);
+    arbol.insertar(3);
+    arbol.insertar(5);
+    arbol.insertar(7);
+    System.out.println("fin");
 
-    arbol.insertar("Farore", "123456789");
-    arbol.insertar("Impa", "987654321");
-    arbol.insertar("Navi", "555555555");
-    arbol.insertar("Zelda", "111111111");
-    arbol.insertar("Link", "999999999");
-    arbol.insertar("Ganon", "000000000");
+    //recorrer el arbol en preorden
+    System.out.println("Recorrido en preorden:");
+    arbol.preorden();
 
-    String telefono = arbol.buscarTelefono("Navi");
-    if (telefono != null) {
-        System.out.println("Teléfono de Navi: " + telefono);
-    } else {
-        System.out.println("Navi no está en el árbol.");
+    //recorrer el arbol en postorden
+    System.out.println("\nRecorrido en postorden:");
+    arbol.postorden();
+
+    //recorrer el arbol en inorden
+    System.out.println("\nRecorrido en inorden:");
+    arbol.inorden();
+
     }
-}
 
 
 

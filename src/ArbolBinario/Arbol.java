@@ -31,4 +31,43 @@ public class Arbol {
             }
         }
     }
+
+    //Metodo para recorrido en postorden
+    public void postorden(){
+        postorden(this.raiz);
+    }
+
+    private void postorden(Nodo nodo){
+        if (nodo !=null){
+            postorden(nodo.GetSubarbolDcho());
+            postorden(nodo.GetSubarbolDcho());
+            System.out.println(nodo.valorNodo());
+        }
+    }
+
+    //metodo para recorrido en preorden
+    public void preorden(){
+        preorden(this.raiz);
+    }
+
+    private void preorden(Nodo nodo){
+        if (nodo !=null){
+            System.out.println(nodo.valorNodo()+ "");
+            preorden(nodo.GetSubarbolIzdo());
+            preorden(nodo.GetSubarbolDcho());
+        }
+    }
+
+    public void inorden(){
+        inorden(this.raiz);
+    }
+
+    private void inorden(Nodo nodo){
+        if (nodo !=null){
+
+            inorden(nodo.GetSubarbolIzdo());
+            System.out.println(nodo.valorNodo() + "");
+            inorden(nodo.GetSubarbolDcho());
+        }
+    }
 }
