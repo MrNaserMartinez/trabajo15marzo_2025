@@ -1,74 +1,28 @@
 import ArbolBinario.Arbol;
-import ArbolCedena.ArbolCadena;
+import ArbolBinario.Arbol;
 import ArbolitoContactos.ArbolContactos;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-public static void main(String[] args) {
+    public static void main(String[] args) {
+        Arbol arbol = new Arbol();
 
-//    Arbol arbol = new Arbol();
-//    arbol.insertar(1);
-//    arbol.insertar(2);
-//    arbol.insertar(3);
-//    arbol.insertar(10);
-//    arbol.insertar(15);
-//    arbol.insertar(6);
-//    arbol.insertar(8);
-//    arbol.insertar(5);
-//    arbol.insertar( 11);
-//    System.out.println("fin");
+        // Insertar los valores como en tu imagen
+        arbol.insertar(4);
+        arbol.insertar(2);
+        arbol.insertar(6);
+        arbol.insertar(1);
+        arbol.insertar(3);
+        arbol.insertar(5);
+        arbol.insertar(7);
 
-//    ArbolCadena ar = new ArbolCadena();
-//    ar.insertar("Farore");
-//    ar.insertar("Impa");
-//    ar.insertar("Navi");
-//    ar.insertar("Zelda");
-//    ar.insertar("Link");
-//    ar.insertar("Ganon");
-//
-//    System.out.println("Recorrido inorden:");
+        System.out.println("Árbol creado exitosamente!\n");
 
-//    ArbolContactos arbol = new ArbolContactos();
-//
-//    arbol.insertar("Farore", "123456789");
-//    arbol.insertar("Impa", "987654321");
-//    arbol.insertar("Navi", "555555555");
-//    arbol.insertar("Zelda", "111111111");
-//    arbol.insertar("Link", "999999999");
-//    arbol.insertar("Ganon", "000000000");
-//
-//    String telefono = arbol.buscarTelefono("Navi");
-//    if (telefono != null) {
-//        System.out.println("Teléfono de Navi: " + telefono);
-//    } else {
-//        System.out.println("Navi no está el wey en el árbol.");
-//    }
-//
-    Arbol arbol = new Arbol();
-    arbol.insertar(4);
-    arbol.insertar(2);
-    arbol.insertar(6);
-    arbol.insertar(1);
-    arbol.insertar(3);
-    arbol.insertar(5);
-    arbol.insertar(7);
-    System.out.println("fin");
+        // Mostrar recorridos como en tu imagen
+        arbol.postorden();  // 1,3,2,5,7,6,4
+        arbol.inorden();    // 1,2,3,4,5,6,7
 
-    //recorrer el arbol en preorden
-    System.out.println("Recorrido en preorden:");
-    arbol.preorden();
-
-    //recorrer el arbol en postorden
-    System.out.println("\nRecorrido en postorden:");
-    arbol.postorden();
-
-    //recorrer el arbol en inorden
-    System.out.println("\nRecorrido en inorden:");
-    arbol.inorden();
-
+        // Visualizar el árbol estéticamente en la consola
+        System.out.println("\nVisualizando el árbol:");
+        arbol.visualizarArbol();
     }
-
-
-
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7130eee9-5723-4ad5-8a5c-2ba9342f6f87" name="Changes" comment="si">
+    <list default="true" id="7130eee9-5723-4ad5-8a5c-2ba9342f6f87" name="Changes" comment="detalles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArbolBinario/Arbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArbolBinario/Arbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArbolCedena/ArbolCadena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArbolCedena/ArbolCadena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArbolCedena/Nodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArbolCedena/Nodo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +96,7 @@
       <workItem from="1742061011492" duration="152000" />
       <workItem from="1742061178583" duration="3683000" />
       <workItem from="1742587108265" duration="4629000" />
-      <workItem from="1742663209644" duration="3455000" />
+      <workItem from="1742663209644" duration="5424000" />
     </task>
     <task id="LOCAL-00001" summary="si">
       <option name="closed" value="true" />
@@ -104,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742591343386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="detalles">
+      <option name="closed" value="true" />
+      <created>1742667205757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742667205757</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="si" />
-    <option name="LAST_COMMIT_MESSAGE" value="si" />
+    <MESSAGE value="detalles" />
+    <option name="LAST_COMMIT_MESSAGE" value="detalles" />
   </component>
 </project>

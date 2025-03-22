@@ -1,32 +1,43 @@
 package ArbolCedena;
 
 public class Nodo {
-    protected String dato;
+    protected int dato;
     protected Nodo izdo;
     protected Nodo dcho;
 
-    public Nodo(String valor) {
+    public Nodo(int valor) {
         dato = valor;
-        izdo = null;
-        dcho = null;
+        izdo = dcho = null;
     }
 
-    public Nodo(Nodo ramaIzdo, String valor, Nodo ramaDcho) {
+    public Nodo(int valor, Nodo izquierdo, Nodo derecho) {
         dato = valor;
-        izdo = ramaIzdo;
-        dcho = ramaDcho;
+        izdo = izquierdo;
+        dcho = derecho;
     }
 
-    public String valorNodo() {
+    // Operaciones de acceso
+    public int valorNodo() {
         return dato;
     }
 
-    public Nodo getSubarbolIzdo() {
+    public Nodo GetSubarbolIzdo() {
         return izdo;
     }
 
-    public Nodo getSubarbolDcho() {
+    public Nodo GetSubarbolDcho() {
         return dcho;
     }
-}
 
+    public void nuevoValor(int d) {
+        dato = d;
+    }
+
+    public void ramaIzdo(Nodo n) {
+        izdo = n;
+    }
+
+    public void ramaDcho(Nodo n) {
+        dcho = n;
+    }
+}
